@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: microservice
+  name: microservice-message
   
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: microservice
+      app: microservice-message
   template:
     metadata:
       labels:
-        app: microservice
+        app: microservice-message
     spec:
       containers:
-      - name: microservice
-        image: tutum/hello-world
+      - name: microservice-message
+        image: yashtech/microservice
         ports:
         - containerPort: 80
 ---
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: microservice-svc
+  name: microservice-message-svc
  
 spec:
   ports:
@@ -32,5 +32,5 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: microservice
+    app: microservice-message
   type: NodePort
