@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: microservice-message
-        image: yashtech/microservice
+        image: yashtech/microservicenew2
         ports:
         - containerPort: 80
 ---
