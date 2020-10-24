@@ -1,1 +1,1 @@
-sed "s/tagVersion/$1/g" kubernetes.yml
+sed "s/tagVersion/$1/g" Kubernetes.yml
