@@ -35,7 +35,7 @@ public class MicroController {
 		  Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 		  LOGGER.info("MicroController::getMessage Method call   :: " + sdf.format(timestamp));
 		 
-		 return ResponseEntity.ok("Hello Jenkins+Docer+Kubernets *******33333Hurreyyyyy");
+		 return ResponseEntity.ok("Hello Jenkins+GIT+Docker+Kubernets+ELK");
 		 
 	}
 
